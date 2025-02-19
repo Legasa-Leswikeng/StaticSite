@@ -29,6 +29,24 @@
         p {
             line-height: 1.6;
         }
+        .ball {
+            position: fixed;
+            top: 50%;
+            left: 90%;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -43,8 +61,8 @@
         <div class="section">
             <h2>Career</h2>
             <p>I have worked at SARS as an analyst from 2017 to Current. My responsibilities included Data Collection and Analysis: Gathering and interpreting data to help the organization make informed decisions.
-Identifying Trends: Analyzing data to identify patterns and trends that can inform business strategies.
-Reporting: Creating reports and visualizations to present findings to stakeholders.</p>
+            Identifying Trends: Analyzing data to identify patterns and trends that can inform business strategies.
+            Reporting: Creating reports and visualizations to present findings to stakeholders.</p>
         </div>
         <div class="section">
             <h2>Projects</h2>
@@ -58,6 +76,7 @@ Reporting: Creating reports and visualizations to present findings to stakeholde
             <h2>Contact</h2>
             <p>You can reach me at <a href="mailto:legasachikanosi@gmail.com">legasachikanosi@gmail.com</a>.</p>
         </div>
+        <div class="ball"></div>
     </div>
 </body>
 </html>
